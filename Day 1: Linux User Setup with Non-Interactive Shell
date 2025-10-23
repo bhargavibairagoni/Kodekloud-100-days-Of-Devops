@@ -1,0 +1,9 @@
+Create a user named kirsty with a non-interactive shell on App Server 1.
+
+ssh tony@stapp01
+useradd --shell /usr/sbin/nologin Kirsty
+id kirsty
+grep kirsty /etc/passwd
+
+#deleting user
+userdel kirsty
